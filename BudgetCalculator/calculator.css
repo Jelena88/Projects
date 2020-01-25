@@ -1,0 +1,129 @@
+body {
+    font-family: system-ui;
+    position: relative;
+    text-align: center;
+}
+#sel {
+    display: flex;
+    width: 530px;
+    margin: 20px auto;
+}
+#selekt {
+    flex-grow: 1;
+    margin-right: 5px;
+    border: 2px solid black;
+    height: 31px;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+}
+#unosDugme {
+    height: 31px;
+    border: 2px solid black;
+}
+#opis {
+    height: 25px;
+    border: 2px solid black;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+}
+#iznos {
+    height: 25px;
+    border: 2px solid black;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+}
+#inp {
+    flex-grow: 1;
+}
+#ukupno {
+    text-align: center;
+}
+#ukupno p {
+    font-size: 20px;
+    margin: 5px;
+}
+#stanjeUkupno {
+    font-size: 20px;
+    border: solid 4px black;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding-top: 9px;
+}
+#prihodiUkupno {
+    font-size: 20px;
+    border: solid 2px black;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding-top: 9px;
+}
+#rashodi {
+    font-size: 20px;
+    border: solid 2px black;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding-top: 9px;
+}
+#lista {
+    display: flex;
+    margin: 0 auto;
+    width: 530px
+}
+#rashodiLista {
+    text-align: right;
+    font-size: 20px;
+}
+#prihodiLista {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 20px;
+}
+.list1cont {
+    display: flex;
+}
+.list2cont {
+    display: flex;
+    text-align: right;
+}
+.obrisi1 {
+    display: none;
+}
+.list1cont:hover .obrisi1 {
+    display: inline;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.obrisi2 {
+    display: none
+}
+.list2cont:hover .obrisi2 {
+    display: inline;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+#rashodiUkupno {
+    display: inline;
+    text-align: center;
+    position: relative;
+    left: 15px
+}
+#procenat {
+    display: inline;
+    font-size: 14px;
+    position: relative;
+    left: 65px;
+}
+.div222 {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+h1 {
+    padding-top: 20px;
+}

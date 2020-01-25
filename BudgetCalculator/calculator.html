@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="calculator.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+<body>
+    <div id="sve">
+        <h1>Budget calculator</h1>
+        <section id="ukupno">
+            <p>TOTAL:</p>
+            <div id="stanjeUkupno"></div>
+            <p>INCOME:</p>
+            <div id="prihodiUkupno"></div>
+            <p>EXPENSES:</p>
+            <div id="rashodi">
+                <div id="rashodiUkupno"></div>
+                <div id="procenat"> </div>
+            </div>
+        </section>
+        <section id='sel'>
+            <select name="" id="selekt">
+                <option value="">-</option>
+                <option value="Prihodi">INCOME</option>
+                <option value="Rashodi">EXPENSES</option>
+            </select>
+            <div id="inp">
+                <input id="opis" type="text" name="Opis" placeholder="Add description" />
+                <input id="iznos" type="text" step="0.01" name="Sum" placeholder="Value" />
+                <input id="unosDugme" type="submit" value="Add">
+            </div>
+        </section>
+        <section id="lista">
+            <div id="prihodiLista">
+                <div> <b> INCOME:</b></div> <br>
+            </div>
+            <div id="rashodiLista">
+                <div>
+                    <div><b>EXPENSES: </b></div> <br>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
