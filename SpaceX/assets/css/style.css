@@ -1,0 +1,49 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  color: #f6f7f8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+background-color: rgb(9, 9, 32);
+
+  width: 950px;
+  margin: auto;
+}
+
+#app {
+  text-align: center;
+}
+h1{
+  font-size: 30px;
+}
+img {
+  width:100px;
+  height:100px;
+  margin: 5px;
+}
+launches{
+  display: block;
+  width: 950px;
+}
+launch {
+  display: inline-block;
+  border: 2px solid white;
+  width: 31%;
+  height: 175px;
+  margin:3px;
+  padding: 5px;
+  background-color: rgba(102, 133, 190, 0.733);
+}
+
+
+

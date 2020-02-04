@@ -2,32 +2,55 @@ body {
     font-family: system-ui;
     position: relative;
     text-align: center;
+    background: #092756;
+	background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+    background-repeat: no-repeat;    
+    background-size:cover;
+    padding-bottom: 8%;   
+}
+#sve {
+    width: 600px;
+    background: rgba(0, 0, 0, 0.39);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
 }
 #sel {
     display: flex;
-    width: 530px;
-    margin: 20px auto;
+    width: 580px;
+    margin: 0px auto;
+    padding: 40px 10px 40px 10px;
 }
 #selekt {
     flex-grow: 1;
-    margin-right: 5px;
-    border: 2px solid black;
-    height: 31px;
-    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    padding-right: 5px;
+    height: 38px;
+    border-radius: 10px;
+    margin-top: 1px;  
 }
 #unosDugme {
-    height: 31px;
-    border: 2px solid black;
+    height: 38px;   
+    cursor: pointer;
+   background-color: rgb(255, 166, 0);
+    width: 120px;
+    border-radius: 10px;
+    border: rgb(255, 166, 0) solid 1px; 
 }
 #opis {
     height: 25px;
-    border: 2px solid black;
-    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: 10px;
+    padding: 1%;
+    width: 150px;
 }
 #iznos {
     height: 25px;
-    border: 2px solid black;
-    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: 10px;
+    padding: 1%;
+    width: 150px;
 }
 #inp {
     flex-grow: 1;
@@ -37,55 +60,46 @@ body {
 }
 #ukupno p {
     font-size: 20px;
-    margin: 5px;
+    padding: 2px;
+    padding-top:10px;
+    margin: 0px;
+    color: rgb(255, 166, 0);
 }
-#stanjeUkupno {
+#stanjeUkupno, #prihodiUkupno, #rashodi {
     font-size: 20px;
-    border: solid 4px black;
+    border: solid 0.5px rgb(226, 226, 226);
     width: 300px;
     height: 40px;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(202, 211, 223, 0.842);
     padding-top: 9px;
-}
-#prihodiUkupno {
-    font-size: 20px;
-    border: solid 2px black;
-    width: 300px;
-    height: 40px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    padding-top: 9px;
-}
-#rashodi {
-    font-size: 20px;
-    border: solid 2px black;
-    width: 300px;
-    height: 40px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    padding-top: 9px;
+    border-radius: 15px;  
 }
 #lista {
     display: flex;
     margin: 0 auto;
-    width: 530px
+    width: 560px;
+    flex-wrap: wrap;  
 }
 #rashodiLista {
     text-align: right;
     font-size: 20px;
+    color: rgb(255, 166, 0);
+    flex-grow: 1;  
 }
 #prihodiLista {
     flex-grow: 1;
     text-align: left;
     font-size: 20px;
-}
+    color: rgb(255, 166, 0);   
+  }
 .list1cont {
     display: flex;
 }
 .list2cont {
     display: flex;
     text-align: right;
+    justify-content: flex-end;
 }
 .obrisi1 {
     display: none;
@@ -96,6 +110,7 @@ body {
     border: none;
     font-size: 20px;
     font-weight: bold;
+    color: rgb(255, 166, 0);
 }
 .obrisi2 {
     display: none
@@ -106,6 +121,7 @@ body {
     border: none;
     font-size: 20px;
     font-weight: bold;
+    color: rgb(255, 166, 0);
 }
 #rashodiUkupno {
     display: inline;
@@ -123,7 +139,95 @@ body {
     font-size: 14px;
     padding-top: 6px;
     padding-left: 6px;
+    color: rgb(76, 187, 132);
 }
 h1 {
-    padding-top: 20px;
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgb(255, 166, 0);
 }
+::placeholder {
+    padding: 5px;
+   }
+ @media only screen and (max-width: 670px) {
+    #sve {
+        width: 300px;      
+        padding: 10px;
+           }
+    #sel {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin: 0px auto;
+       padding-top: 20px;
+       padding-bottom: 10px;
+    }
+    #selekt {
+        padding-right: 0px;
+        height: 30px;
+        width: 100px;
+        margin: 0 auto;              
+    }
+    #unosDugme {
+        height: 30px;   
+        width: 100px;
+        border: rgb(255, 166, 0) solid 1px; 
+        margin: 10px;
+    }
+    #opis {
+        height: 23px;
+        padding: 1%;
+        width: 150px;
+        margin: 10px;
+    }
+    #iznos {
+        height: 23px;
+        padding: 1%;
+        width: 150px;
+    }
+    #lista {
+       width: 290px
+    }
+    #rashodiLista {
+        font-size: 12px;       
+    }
+    #prihodiLista {
+          font-size: 12px;
+     }
+     #stanjeUkupno, #prihodiUkupno, #rashodi {
+        font-size: 20px;
+        width: 200px;
+        height:32px;       
+        padding-top: 2px;      
+    }
+    #ukupno p {
+        font-size: 14px;            
+    }
+.list1cont:hover .obrisi1 {
+    font-size: 14px;
+    font-weight: bold;
+   }
+.list2cont:hover .obrisi2 {  
+    font-size: 14px;
+    font-weight: bold;    
+}
+h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.div222 {
+    font-size: 10px;
+    padding-top: 1px;
+  }
+#procenat {
+    display: inline;
+    font-size: 14px;
+    position: relative;
+    left: 25px;
+}
+}
+   

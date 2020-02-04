@@ -10,14 +10,20 @@ const selekt = document.querySelector('#selekt')
 
     var items1 = [0];
     var items2 = [0];
-
+    document.addEventListener("keypress", event => {
+        if (event.key === "Enter") {
+          add();
+        }
+      });
     function add() {
 
         var sel = selekt.value
         var opis = document.querySelector('#opis')
         var iznos = document.querySelector('#iznos')
-        if (opis.value == '') {
-            alert("You didn't add description")
+
+    
+        if (opis.value == '' || iznos.value == '') {
+            alert("All fields must be completed")
             return
         }
         if (iznos.value <= 0) {
@@ -35,16 +41,20 @@ const selekt = document.querySelector('#selekt')
             par.className = 'list1cont'
             var par1 = document.createElement('div')
             par1.className = 'div1'
+            var par13 = document.createElement('div')
+            par13.className = 'div13'
             var par12 = document.createElement('div')
             par12.className = 'div12'
             var obrisi = document.createElement('button')
             obrisi.className = 'obrisi1'
             obrisi.innerHTML = 'x'
             par.appendChild(par1)
+            par.appendChild(par13)
             par.appendChild(par12)
             par.appendChild(obrisi)
             prihodiLista.appendChild(par)
-            par1.innerHTML = `${opis.value} +`
+            par1.innerHTML = `${opis.value} \xa0\xa0\xa0\xa0`
+            par13.innerHTML = `+`
             par12.innerHTML = `${(iznos.value)}`
             items1.push(iznos.value * 1);
 
@@ -83,13 +93,16 @@ const selekt = document.querySelector('#selekt')
                 }
             }
         }
+      
         if (sel == 'Rashodi') {
             var parr = document.createElement('div')
             parr.className = 'list2cont'
             var sum1 = items1.reduce(sumArray);
-            if (sum1 == 0) { alert('Unesite prvo prihode'); return }
+            if (sum1 == 0) { alert('Select first Income'); return }
             var par2 = document.createElement('div')
             par2.className = 'div2'
+            var par23 = document.createElement('div')
+            par23.className = 'div23'
             var par22 = document.createElement('div')
             par22.className = 'div22'
             var par222 = document.createElement('div')
@@ -98,13 +111,15 @@ const selekt = document.querySelector('#selekt')
             obrisi1.className = 'obrisi2'
             obrisi1.innerHTML = 'x'
             parr.appendChild(par2)
+            parr.appendChild(par23)
             parr.appendChild(par22)
             parr.appendChild(par222)
             parr.appendChild(obrisi1)
             rashodiLista.appendChild(parr)
             var procenat = (iznos.value * 100 / sum1).toFixed(0)
 
-            par2.innerHTML = `${opis.value} -`
+            par2.innerHTML = `${opis.value} \xa0\xa0\xa0\xa0`
+            par23.innerHTML = `-`
             par22.innerHTML = `${iznos.value} `
             par222.innerHTML = ` ${procenat}%`
 

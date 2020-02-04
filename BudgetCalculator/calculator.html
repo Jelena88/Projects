@@ -12,7 +12,7 @@
 
 <body>
     <div id="sve">
-        <h1>Budget calculator</h1>
+        <h1>BUDGET CALCULATOR</h1>
         <section id="ukupno">
             <p>TOTAL:</p>
             <div id="stanjeUkupno"></div>
@@ -26,13 +26,12 @@
         </section>
         <section id='sel'>
             <select name="" id="selekt">
-                <option value="">-</option>
                 <option value="Prihodi">INCOME</option>
                 <option value="Rashodi">EXPENSES</option>
             </select>
             <div id="inp">
-                <input id="opis" type="text" name="Opis" placeholder="Add description" />
-                <input id="iznos" type="text" step="0.01" name="Sum" placeholder="Value" />
+                <input id="opis" type="text" name="Opis" placeholder="Add Description" />
+                <input id="iznos" type="number" name="Sum" placeholder="Add Value" min="0"/>
                 <input id="unosDugme" type="submit" value="Add">
             </div>
         </section>
