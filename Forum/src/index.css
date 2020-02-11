@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  text-align: center;
+  width: 100%;
+  background-color: #363E4A;
+  height: 100vh;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.logo {
+  padding-top: 20px;
+}
+
+h1 {
+  padding: 0;
+  font-family: 'Calligraffitti';
+  color: rgb(245, 17, 169);
+  padding-left: 20px;
+}
+h2 {
+  padding: 0;
+  font-family: 'Calligraffitti';
+  color: rgb(245, 17, 169);
+ 
+  
+}
+
+h4 {
+ margin: 0;
+  font-family: 'Calligraffitti';
+  color: rgb(245, 17, 169);
+  text-align: left;
+}
+
+/* buttons */
+.header-btn{
+  margin: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px ;
+  background: rgb(247, 163, 61); 
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+.logout-btn{
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 80px ;
+  background: rgb(248, 81, 136); 
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+}
+
+.back-btn{
+  width: 200px;
+  height: 30px;
+}
+
+/* registration/login form */
+.reg-log-div{
+
+
+  width: 250px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+ 
+}
+
+input, button{
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-style: none;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+button {
+  width: 210px;
+}
+
+textarea {
+  width: 320px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-style: none;
+  border-radius: 6px;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+
+
+ 
+}
+
+ /* new message/new topic input */
+.new-input{
+
+ 
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  
+}
+
+/* topics */
+.topics-container{
+  overflow: auto;
+  margin: 30px;
+  margin: 0 auto;
+}
+
+.topics-divs{
+  margin: 0 auto;
+  width: 350px;
+}
+
+.topics{
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 6px;
+background:  rgb(255, 71, 194);
+list-style: none;
+}
+
+/* messages */
+
+
+
+.one-msg-container{
+  margin: 0 auto;
+  width: 250px;
+  color: white;
+}
+
+.one-msg{
+  border-bottom: 1px solid rgb(255, 71, 194);
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+/* profile data */
+.profile{
+ 
+
+  text-align: center;
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+color: white;
+}
+
+/* scroll button */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+input:focus 
+{
+    
+    background: rgb(253, 200, 245);
+    outline: none;
+ }
+ input[type=submit], button {
+  background: rgb(245, 17, 169);
+  cursor: pointer;
+
+  
+}
+input[type=submit]:focus, button:focus {
+  background:  rgb(255, 71, 194);
+  outline: none;
+  
+}
+
+label {
+  color: rgb(245, 17, 169);
+}
+
+fieldset {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  
+}
+
+::placeholder {
+  padding-left: 2px;
+}
+
+.forum-name {
+  display: row;
+  justify-content: center;
+
+}
+
+span {color: white;}
+.title {
+  color: rgb(245, 17, 169);
+
+}
+u {
+  color: rgb(206, 206, 255);
+}
+
+.titleTopic {
+  border-bottom: 1px solid rgb(255, 71, 194);
+}
+
+h5 { padding: 0;
+  font-family: 'Calligraffitti';
+  color: rgb(245, 17, 169);
+
+}
+span > h4 {
+  text-align: center;
+}
+
+.date {
+  font-size: 11px;
+}
+
+
+
